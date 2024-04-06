@@ -1,0 +1,72 @@
+local Console = loadstring(game:HttpGet("https://raw.githubusercontent.com/juywvm/ui-libs/main/Stx_Console_Ui_Library/StxConsoleUiLibrary"))()
+local ConsoleLog = Console:Window({
+    Title = "[ADOPT ME] NXSIM DUPE SCRIPT",
+    Position = UDim2.new(0.5, 0, 0.5, 0),
+    DragSpeed = 12
+})
+
+-- Check script
+ConsoleLog:Prompt({
+    Title = "Setup Started..",
+    TypesWeHave = {
+        "default",
+        "success",
+        "fail",
+        "warning",
+        "notification"
+    },
+    Type = "default"
+})
+wait(3) -- Adjust the delay as needed
+
+-- Check current server
+ConsoleLog:Prompt({
+    Title = "Checking current User Profile..",
+    TypesWeHave = {
+        "default",
+        "success",
+        "fail",
+        "warning",
+        "notification"
+    },
+    Type = "warning"
+})
+wait(3) -- Adjust the delay as needed
+ConsoleLog:Prompt({
+    Title = "This server could be banable, be careful.",
+    TypesWeHave = {
+        "default",
+        "success",
+        "fail",
+        "warning",
+        "notification"
+    },
+    Type = "warning"
+})
+
+-- Failed with red color
+ConsoleLog:Prompt({
+    Title = "Failed",
+    TypesWeHave = {
+        "default",
+        "success",
+        "fail",
+        "warning",
+        "notification"
+    },
+    Type = "fail", -- Set the type to "fail"
+    Color = Color3.fromRGB(255, 0, 0) -- Red color
+})
+
+-- Notification
+ConsoleLog:Prompt({
+    Title = "Sub NxsIM on YouTube for help.",
+    TypesWeHave = {
+        "default",
+        "success",
+        "fail",
+        "warning",
+        "notification"
+    },
+    Type = "notification"
+})
